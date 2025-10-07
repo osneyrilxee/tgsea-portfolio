@@ -1,0 +1,380 @@
+:root {
+  background-color: #191919;
+  color: #707070;
+  overflow-x: hidden;
+  font-family: "Noto Sans", sans-serif
+}
+
+:root a {
+  color: #707070;
+}
+
+:root a:hover {
+  color: #CCC7C8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* évite que padding/border fassent dépasser */
+}
+
+/* #CCC7C8, #707070, #191919, #0e0e0e */
+
+div#body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+/* ---------- HEADER ---------- */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #CCC7C8;
+  padding: 1%;
+  width: 95%;
+  overflow: hidden; /* bloque débordement éventuel */
+}
+
+/* NAV */
+
+nav {
+  display: flex;
+}
+
+.header__list--active {
+  display: flex;
+  list-style: none;
+  gap: 2em;
+  flex-shrink: 1;
+}
+
+.header__list-item--active a {
+  text-decoration: none;
+}
+
+.header__navigation-logo {
+  filter: invert(99%) sepia(0%) saturate(12%) brightness(80%) contrast(119%);
+}
+
+/* !!! OUT OF CONTAINER H1 !!! */
+
+#text-information {
+  display: inline-block;
+  white-space: nowrap;  
+  font-weight: 800;
+  position: relative; /* nécessaire pour left/right */
+  animation: slide 15s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-450%); /* commence à droite */
+  }
+  100% {
+    transform: translateX(480%); /* finit complètement à gauche */
+  }
+}
+
+/* ---------- MAIN ---------- */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  /* gap: 2em; */
+}
+
+/* ************ welcoming ************ */
+
+.main__welcoming-profil--active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.main__welcoming-profil-social-detail--active {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 1px solid aliceblue;
+  border-radius: 25px;
+  padding: 1em;
+  width: 15%;
+}
+
+#main-profile-picture {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.main__welcoming-profil-language--active {
+  border: 1px solid aliceblue;
+  padding: 1em;
+  border-radius: 25px;
+}
+
+.h2-background-set {
+  background-color: #0e0e0e;
+  width: 100%;
+}
+
+h2 {
+  font-size: 7em;
+  text-align: center;
+  /* position: relative;
+  animation: slowmode 5s ease reverse; */
+}
+
+@keyframes slowmode {
+  from { left: 0px; }
+  to { left: 300px; }
+}
+
+.main__section-welcoming--active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__section-welcoming-text--active {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1em;
+  gap: 1em;
+  padding: 5em 0 10em 0;
+}
+
+#section-welcoming-text--active {
+  padding: 1em;
+  font-size: 3em;
+}
+
+.main__welcoming-text--active {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: auto;
+  border: 1px solid aliceblue;
+  border-radius: 25px;
+  padding: 1em;
+}
+
+/* ************ project ************ */
+
+.main__container-project--active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+  padding: 8.5em 0;
+}
+
+.main__container-project-global--active {
+  background-color: #0e0e0e;
+  border-radius: 25px;
+}
+
+.main__container-project-global--active {
+  width: 300px;
+}
+
+.main__projet-image--active {
+  width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+.main__projet-text-container--active {
+  padding: 1em;
+}
+
+.main__link-style--active {
+  text-decoration: none;
+}
+
+/* ************ my stack ************ */
+
+.main__my-stack-container--active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__my-stack-list--active {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  width: 50%;
+  list-style: none;
+}
+
+.main__my-stack-list--active li {
+  display: flex;
+  flex-direction: row;
+}
+
+.main__my-stack-list--active li {
+  display: flex;
+  gap: 10px;
+}
+
+.main__my_stack-list-global-image-text--active {
+  display: flex;
+  align-items: center;
+}
+
+.main__my-stack-list-style--active {
+  text-decoration: none;
+}
+
+
+/* outside a container */
+
+#email-text {
+  color: #707070;
+  text-align: center;
+}
+
+#email-text:hover {
+  color: #CCC7C8;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  padding: 2em;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 1920px) {
+  .h2-background-set h2 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 1065px) {
+  .main__section-welcoming-text--active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
+
+  .main__welcoming-profil-social-detail--active {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .main__welcoming-profil-language--active {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-side-bar {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .div__side-bar--active {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background: #000000dc;
+    display: none;
+    justify-content: center;
+  }
+
+  .div__side-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .div__side-bar li {
+    padding: 1rem;
+  }
+
+  .div__side-bar a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .div__side-bar a:hover {
+    text-decoration: underline;
+  }
+
+  #text-information {
+    display: none;
+  }
+
+  /* .main__welcoming-profil-social-detail--active a img {
+    width: 15%;
+  } */
+}
+
+/* ---------- RESPONSIVE SPECICATIONS RULES ---------- */
+
+@media (prefers-color-scheme: black) {
+  :root {
+  background-color: rgb(10, 10, 10);
+  color: rgb(85, 85, 85);
+  }
+  a:hover {
+    color: aliceblue;
+  }
+  button {
+    background-color: rgb(10, 10, 10);
+  }
+}
+
+/* verification need */
+
+
+----------------------------------------------------------
+/* TO EDITED IN FIRST */
+
+#tests {
+  color: white;
+  text-align: center;
+}
+
+#tests:after {
+  color: white;
+}
