@@ -147,14 +147,9 @@ main {
 #main-profile-picture {
   width: 200px;
   height: 200px;
+  object-position: px 0px;
   object-fit: cover;
   border-radius: 50%;
-}
-
-.main__welcoming-profil-language--active {
-  border: 1px solid aliceblue;
-  padding: 1em;
-  border-radius: 25px;
 }
 
 .h2-background-set {
@@ -225,11 +220,21 @@ h2 {
   width: 300px;
 }
 
+.main__projet-image-container {
+  width: 100%;
+  height: 180px;        /* fixe la hauteur du cadre */
+  overflow: hidden;     /* ⛔ empêche le débordement */
+  border-radius: 25px 25px 0 0; /* optionnel */
+}
+
 .main__projet-image--active {
   width: 100%;
-  height: auto;
-  border-radius: 25px;
+  height: 100%;
+  object-fit: cover;      
+  transform: scale(2);    /* zoom visible mais contenu */
+  transform-origin: 190px 158px;
 }
+
 
 .main__projet-text-container--active {
   padding: 1em;

@@ -1,24 +1,30 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <title>Rilxee JJ — Portfolio</title>
   <link rel="stylesheet" href="/src/style.css" />
   <meta name="google-site-verification" content="lr1Q96f1OCLbwcRAGw9LYzu-Xrttk0i9wjd0jjpq0Fs" />
   <script src="./src/main.js" defer></script>
 </head>
+
 <body>
   <div id="body">
 
     <header>
       <div class="header__title-text header__title-text--active">
         <h1 id="header-title">Rilxee JJ</h1>
-        <p>Developer, Designer</p>
+        <p id="textFromTitle">Developer, Designer</p>
       </div>
+
+      <select name="" class="div_language" id="selectLanguage">
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="it">Italiano</option>
+            <option value="kr">한국어</option>
+          </select>
 
       <nav>
         <ul class="header__list header__list--active">
@@ -31,6 +37,7 @@
           <li class="header__list-item header__list-item--active header__list-item--hover">
             <a href="#main-section-my-stack">my stack</a>
           </li>
+
         </ul>
       </nav>
 
@@ -61,11 +68,10 @@
     <p id="text-information">Website in building process</p>
 
     <main>
-      <section
-        id="main-section-presentation"
-        class="main__section-welcoming main__section-welcoming--active"
-      >
-        <div class="h2-background-set"><h2>about me.</h2></div>
+      <section id="main-section-presentation" class="main__section-welcoming main__section-welcoming--active">
+        <div class="h2-background-set">
+          <h2>about me.</h2>
+        </div>
         <p id="section-welcoming-text--active">
           Rilxee JJ Creative Developer
         </p>
@@ -73,11 +79,7 @@
         <div class="main__section-welcoming-text main__section-welcoming-text--active">
           <div class="main__welcoming-profil main__welcoming-profil--active">
             <!-- Remplace italy.png par le chemin correct -->
-            <img
-              id="main-profile-picture"
-              src="./src/assets/italy.png"
-              alt="profile picture"
-            />
+            <img id="main-profile-picture" src="./src/assets/italy.png" alt="profile picture" />
           </div>
 
           <div class="main__welcoming-text main__welcoming-text--active">
@@ -96,97 +98,76 @@
 
           <div class="main__welcoming-profil-social-detail main__welcoming-profil-social-detail--active">
             <a href="https://github.com/osneyrilxee" target="_blank" rel="noopener noreferrer">
-              <img id="main-github-picture" src="./src/assets/logo/github-svgrepo-com.svg" alt="github logo" width="55" />
+              <img id="main-github-picture" src="./src/assets/logo/github-svgrepo-com.svg" alt="github logo"
+                width="55" />
             </a>
             <a href="https://www.instagram.com/osneyrilxee/" target="_blank" rel="noopener noreferrer">
-              <img id="main-instagram-picture" src="./src/assets/logo/instagram-1-svgrepo-com.svg" alt="instagram logo" width="55" />
+              <img id="main-instagram-picture" src="./src/assets/logo/instagram-1-svgrepo-com.svg" alt="instagram logo"
+                width="55" />
             </a>
             <a href="https://x.com/osneyrilxee" target="_blank" rel="noopener noreferrer">
-              <img id="main-twitter-picture" src="./src/assets/logo/twitter-svgrepo-com.svg" alt="twitter logo" width="50" />
+              <img id="main-twitter-picture" src="./src/assets/logo/twitter-svgrepo-com.svg" alt="twitter logo"
+                width="50" />
             </a>
             <a href="https://www.reddit.com/user/osneyrilxee/" target="_blank" rel="noopener noreferrer">
-              <img id="main-reddit-picture" src="./src/assets/logo/reddit-svgrepo-com.svg" alt="reddit logo" width="50" />
+              <img id="main-reddit-picture" src="./src/assets/logo/reddit-svgrepo-com.svg" alt="reddit logo"
+                width="50" />
             </a>
             <a href="https://bsky.app/profile/osneyrilxee.bsky.social" target="_blank" rel="noopener noreferrer">
-              <img id="main-bluesky-picture" src="./src/assets/logo/bluesky-square-color-icon.svg" alt="bluesky logo" width="50" />
+              <img id="main-bluesky-picture" src="./src/assets/logo/bluesky-square-color-icon.svg" alt="bluesky logo"
+                width="50" />
             </a>
             <a href="https://www.twitch.tv/OsneyRilxee" target="_blank" rel="noopener noreferrer">
-              <img id="main-twitch-picture" src="./src/assets/logo/twitch-svgrepo-com.svg" alt="twitch logo" width="50" />
+              <img id="main-twitch-picture" src="./src/assets/logo/twitch-svgrepo-com.svg" alt="twitch logo"
+                width="50" />
             </a>
           </div>
 
-          <div class="main__welcoming-profil-language main__welcoming-profil-language--active">
-            <img id="main-uk-picture" src="./src/assets/logo/united-kingdom-uk-svgrepo-com.svg" alt="uk flag" width="40" /><br />
-            <img id="main-us-picture" src="./src/assets/logo/flag-for-flag-us-outlying-islands-svgrepo-com.svg" alt="us flag" width="40" /><br />
-            <img id="main-french-picture" src="./src/assets/logo/flag-for-flag-france-svgrepo-com.svg" alt="french flag" width="40" /><br />
-            <img id="main-korea-picture" src="./src/assets/logo/flag-for-flag-south-korea-svgrepo-com.svg" alt="korea flag" width="40" /><br />
-            <img id="main-italy-picture" src="./src/assets/logo/flag-for-flag-italy-svgrepo-com.svg" alt="italy flag" width="40" /><br />
-          </div>
-        </div>
       </section>
 
-      <section
-        id="main-section-project"
-        class="main__section-presentation main__section-presentation--active"
-      >
-        <div class="h2-background-set"><h2 id="main-section-presentation">projects.</h2></div>
+      <section id="main-section-project" class="main__section-presentation main__section-presentation--active">
+        <div class="h2-background-set">
+          <h2 id="main-section-presentation">projects.</h2>
+        </div>
 
         <div class="main__container-project main__container-project--active">
           <!-- Project 1 (non affiché dans JSX original) -->
 
-          <div class="main__container-second-project main__container-project-global--active main__container-second-project--active">
-            <img
-              class="main__projet-image main__projet-image--active"
-              src="./src/assets/no_picture.png"
-              width="220"
-              height="180"
-              alt="travel-agency project"
-            />
+          <div
+            class="main__container-second-project main__container-project-global--active main__container-second-project--active">
+            <div class="main__projet-image-container">
+              <img class="main__projet-image main__projet-image--active" src="./src/assets/travel_agency.png"
+                width="220" height="180" alt="travel-agency project" />
+            </div>
             <div class="main__projet-text-container main__projet-text-container--active">
-              <a class="main__link-style main__link-style--active" href="https://github.com/osneyrilxee/travel-agency.git" target="_blank" rel="noopener noreferrer">
+              <a class="main__link-style main__link-style--active"
+                href="https://github.com/osneyrilxee/travel-agency.git" target="_blank" rel="noopener noreferrer">
                 Travel Agency - Project
               </a>
               <br /><br />
               <p>
                 This project is in building process for learning
-                <a href="https://developer.mozilla.org/docs/Glossary/Python" target="_blank" rel="noopener noreferrer" class="informations-color-type--active"> Python</a>,
+                <a href="https://developer.mozilla.org/docs/Glossary/Python" target="_blank" rel="noopener noreferrer"
+                  class="informations-color-type--active"> Python</a>,
                 and that is muddle with some
-                <a href="https://www.rust-lang.org/" target="_blank" rel="noopener noreferrer" class="informations-color-type--active"> Rust</a>
+                <a href="https://www.rust-lang.org/" target="_blank" rel="noopener noreferrer"
+                  class="informations-color-type--active"> Rust</a>
                 up for
-                <a href="https://en.wikipedia.org/wiki/Graphical_user_interface" target="_blank" rel="noopener noreferrer" class="informations-color-type--active"> GUI</a>.
+                <a href="https://en.wikipedia.org/wiki/Graphical_user_interface" target="_blank"
+                  rel="noopener noreferrer" class="informations-color-type--active"> GUI</a>.
                 For the end will appears some
-                <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer" class="informations-color-type--active"> Vue.js</a>
+                <a href="https://vuejs.org/" target="_blank" rel="noopener noreferrer"
+                  class="informations-color-type--active"> Vue.js</a>
               </p>
             </div>
           </div>
 
-          <div class="main__container-third-project main__container-project-global--active main__container-third-project--active">
-            <img
-              class="main__projet-image main__projet-image--active"
-              src="./src/assets/no_picture.png"
-              width="220"
-              height="180"
-              alt="shadow-wolf project"
-            />
-            <div class="main__projet-text-container main__projet-text-container--active">
-              <a class="main__link-style main__link-style--active" href="https://github.com/osneyrilxee/travel-agency.git" target="_blank" rel="noopener noreferrer">
-                Shadow Wolf - Project
-              </a>
-              <br /><br />
-              <p>
-                This project is in building process as well and isn't still
-                online technically, my co-worker work on it as well.
-              </p>
-            </div>
-          </div>
-        </div>
       </section>
 
-      <section
-        id="main-section-my-stack"
-        class="main__my-stack-container main__my-stack-container--active"
-      >
-        <div class="h2-background-set"><h2 id="main-section-presentation">my stack.</h2></div>
+      <section id="main-section-my-stack" class="main__my-stack-container main__my-stack-container--active">
+        <div class="h2-background-set">
+          <h2 id="main-section-presentation">my stack.</h2>
+        </div>
 
         <ul class="main__my-stack-list main__my-stack-list--active">
           <h3>FRONTEND</h3>
@@ -281,4 +262,5 @@
   <!-- Si tu veux ajouter des fonctions JS (toggle menu, animations), inclus ton script ici -->
   <!-- <script src="main.js"></script> -->
 </body>
+
 </html>
