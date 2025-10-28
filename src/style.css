@@ -18,7 +18,6 @@
 
 a {
   color: var(--text-color);
-  text-decoration: none;
   transition: color 0.3s ease;
 }
 
@@ -222,7 +221,7 @@ h2 {
   border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 
-.main__projet-image--active {
+.main__projet-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -230,12 +229,12 @@ h2 {
   transform-origin: center;
 }
 
-.main__projet-text-container--active {
+.main__projet-text-container {
   padding: 1rem;
   font-size: clamp(0.9rem, 1vw, 1rem);
 }
 
-.main__link-style--active {
+.main__link-style {
   text-decoration: none;
 }
 
@@ -245,32 +244,26 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.main__my-stack-list--active {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
-  align-items: center;
-  gap: 2rem;
-  padding: 2rem;
-  width: 50%;
-  list-style: none;
+.main__my-stack-content {
+  padding: 8rem 0;
 }
 
-.main__my-stack-list--active li {
-  display: flex;
-  gap: 0.6rem;
+table, th, td {
+  border-collapse: collapse;
+  border: 1px solid rgb(255, 255, 255);
+  font-family: sans-serif;
   font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 1rem;
 }
 
-.main__my_stack-list-global-image-text--active {
-  display: flex;
-  align-items: center;
-}
-
-.main__my-stack-list-style--active {
-  text-decoration: none;
+table {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* OUTSIDE CONTAINER */
@@ -386,3 +379,4 @@ footer {
 #tests:after {
   color: white;
 }
+
