@@ -253,17 +253,53 @@ h2 {
 
 table, th, td {
   border-collapse: collapse;
-  border: 1px solid rgb(255, 255, 255);
   font-family: sans-serif;
   font-size: 1rem;
   letter-spacing: 1px;
   padding: 1rem;
 }
 
+th, td {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+caption {
+  margin: 20px;
+}
+
 table {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+th:hover {
+  background-color: rgba(80, 80, 80, 0.39);
+}
+
+.table__first-content-table, .table__second-content-table, .table__third-content-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.table__first-content-table p{
+  display: flex;
+  gap: 10px;
+}
+
+.table__second-content-table p {
+  display: flex;
+  gap: 10px;
+}
+
+.table__third-content-table p {
+  display: flex;
+  gap: 10px;
 }
 
 /* OUTSIDE CONTAINER */
