@@ -1,0 +1,118 @@
+/* ========== BODY CONTAINER ========== */
+
+#body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  overflow-x: hidden;
+}
+
+/* ========== MAIN ========== */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Title (H2) */
+.h2-background-set {
+  background-color: var(--bg-dark);
+  width: 100%;
+}
+
+h2 {
+  font-size: clamp(2rem, 6vw, 6rem);
+  text-align: center;
+}
+
+/* MY MASHUP SECTION */
+
+.main__my-mashup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__my-mashup-content {
+  padding: 8rem 0;
+}
+
+/* OUTSIDE CONTAINER */
+
+#email-text {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 1rem;
+}
+
+#email-text:hover {
+  color: var(--text-light);
+}
+
+/* ========== FOOTER ========== */
+
+footer {
+  padding: 2rem;
+  background-color: #000;
+  text-align: center;
+  width: 100%;
+  font-size: clamp(0.9rem, 1vw, 1rem);
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media screen and (max-width: 1065px) {
+  .main__welcoming-profil-language--active {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .navigation-side-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .div__side-bar.active {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000dc;
+    padding-top: 2rem;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div__side-bar ul {
+    list-style: none;
+  }
+
+  .div__side-bar li {
+    padding: 1rem;
+  }
+
+  .div__side-bar a {
+    color: white;
+  }
+
+  #text-information {
+    display: none;
+  }
+}
