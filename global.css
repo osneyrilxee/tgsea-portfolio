@@ -1,0 +1,126 @@
+/* ========== ROOT & BASE STYLES ========== */
+
+:root {
+  --bg-color: #111111;
+  --bg-dark: #0e0e0e;
+  --text-color: #707070;
+  --text-light: #CCC7C8;
+  --border-radius: 25px;
+  --font-main: "Noto Sans", sans-serif;
+
+  /* Base font sizing with fluid scaling */
+  font-size: clamp(14px, 1vw + 0.5rem, 18px);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  overflow-x: hidden;
+}
+
+a {
+  color: var(--text-color);
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--text-light);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: crosshair;
+}
+
+/* ========== HEADER ========== */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--text-light);
+  padding: 1rem;
+  width: 95%;
+  overflow: hidden;
+}
+
+/* NAVIGATION */
+
+nav {
+  display: flex;
+}
+
+.header__list--active {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.header__list-item--active a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.header__navigation-logo {
+  filter: invert(99%) sepia(0%) saturate(12%) brightness(80%) contrast(119%);
+}
+
+.div__side-bar--active {
+  display: none;
+}
+
+.div__side-bar--active.active {
+  display: flex;
+}
+
+
+/* Buger content */
+
+.navigation-side-bar {
+  display: none;
+}
+
+/* Burger Bars */
+#bar-1, #bar-2, #bar-3 {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 6px 0;
+}
+
+/* ========== SLIDING TEXT ========== */
+
+#text-information {
+  display: inline-block;
+  white-space: nowrap;
+  font-weight: 800;
+  font-size: 1.2rem;
+  position: relative;
+  animation: slide 15s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-450%);
+  }
+  100% {
+    transform: translateX(480%);
+  }
+}
+
+/* ========== DARK MODE ========== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+
+  a:hover {
+    color: aliceblue;
+  }
+
+  button {
+    background-color: rgb(10, 10, 10);
+  }
+}
