@@ -249,6 +249,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 480px) {
+  nav {
+    display: flex;
+  }
+}
+
 /* ========== DARK MODE ========== */
 
 @media (prefers-color-scheme: dark) {
