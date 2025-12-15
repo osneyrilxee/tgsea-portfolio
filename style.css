@@ -175,6 +175,15 @@ h2 {
   color: var(--text-light);
 }
 
+/* ========== ASIDE ========== */
+
+/* aside {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 10px;
+} */
+
 /* ========== FOOTER ========== */
 
 footer {
@@ -207,14 +216,24 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  nav {
+
+  /* of course hide all content display from the nav container */
+  nav * {
     display: none;
   }
+
+
 
   .navigation-side-bar {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .navigation-side-bar {
+    width: 30px;
+    background-color: #fff;
+    height: 30px;
   }
 
   .div__side-bar.active {
@@ -250,9 +269,12 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-  nav {
-    display: flex;
+
+   /* of course hide all content display from the nav container */
+  nav * { 
+    display: none;
   }
+
 }
 
 /* ========== DARK MODE ========== */
