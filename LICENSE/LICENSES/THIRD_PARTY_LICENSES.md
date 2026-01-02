@@ -198,6 +198,13 @@ Notes: No modifications
 Language SVG Vector
 Author: iconoir
 Uploader: SVG Repo
+Source: [https://www.svgrepo.com/svg/349577/youtube]
+LICENSE: MIT License (see [LICENSES/mit.txt](LICENSES/mit.txt))  
+Notes: No modifications
+
+Youtube SVG Vector
+Author: edent
+Uploader: SVG Repo
 Source: [https://www.svgrepo.com/svg/325328/language]
 LICENSE: MIT License (see [LICENSES/mit.txt](LICENSES/mit.txt))  
 Notes: No modifications
