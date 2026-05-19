@@ -317,15 +317,6 @@ th:hover {
 
 /* OUTSIDE CONTAINER */
 
-#email-text {
-  color: var(--text-color);
-  text-align: center;
-  font-size: 1rem;
-}
-
-#email-text:hover {
-  color: var(--text-light);
-}
 
 /* ========== FOOTER ========== */
 
