@@ -226,3 +226,45 @@ Uploader: Osney
 Source: [https://raw.githubusercontent.com/osneyrilxee/tgsea-portfolio/refs/heads/main/src/assets/travel_agency.png], [![Travel Agency](/src/assets/travel_agency.png)]
 LICENSE: unknow
 Notes: Do not use pictures for personal or commercial activities. This pictures are authentic from me
+
+Adobe Photoshop SVG Vector 22
+Author: Garuda Technology
+Uploader: SVG Repo
+Source: [https://www.svgrepo.com/svg/452149/adobe-photoshop]
+LICENSE: MIT License (see [LICENSES/mit.txt](LICENSES/mit.txt))  
+Notes: No modifications
+
+Adobe Premiere SVG Vector
+Author: Garuda Technology
+Uploader: SVG Repo
+Source: [https://www.svgrepo.com/svg/452150/adobe-premiere]
+LICENSE: MIT License (see [LICENSES/mit.txt](LICENSES/mit.txt))  
+Notes: No modifications
+
+Adobe After Effects SVG Vector
+Author: Garuda Technology
+Uploader: SVG Repo
+Source: [https://www.svgrepo.com/svg/452141/adobe-after-effects]
+LICENSE: MIT License (see [LICENSES/mit.txt](LICENSES/mit.txt))  
+Notes: No modifications
+
+DaVinci Resolve macOS BigSur - free Icon in PNG and SVG
+Author: Elias
+Uploader: icon-icons
+Source: [https://icon-icons.com/icon/davinci-resolve-macos-bigsur/190261]
+LICENSE: unknow 
+Notes: No modifications
+
+Blender
+Author: unknow
+Uploader: icons8
+Source: [https://icons8.com/icons/set/blender]
+LICENSE: unknow 
+Notes: No modifications
+
+Photopea
+Author: unknow
+Uploader: icons8
+Source: [https://icons8.com/icons/set/photopea]
+LICENSE: unknow 
+Notes: No modifications
