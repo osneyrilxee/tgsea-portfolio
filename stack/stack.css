@@ -145,10 +145,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  nav {
-    display: none;
-  }
-
   .navigation-side-bar {
     display: flex;
     align-items: center;
