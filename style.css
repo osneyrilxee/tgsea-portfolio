@@ -218,11 +218,36 @@ footer {
 @media screen and (max-width: 768px) {
 
   /* of course hide all content display from the nav container */
-  nav * {
+
+  .nav-bar {
     display: none;
   }
 
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
 
+  .nav-bar.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hamburger {
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .hamburger span {
+    height: 4px;
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+  }
 
   .navigation-side-bar {
     display: flex;

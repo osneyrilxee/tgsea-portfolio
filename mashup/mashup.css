@@ -66,6 +66,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
   .navigation-side-bar {
     display: flex;
     align-items: center;
