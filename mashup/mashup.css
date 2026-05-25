@@ -105,39 +105,6 @@ footer {
     border-radius: 4px;
   }
 
-  .navigation-side-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .div__side-bar.active {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: #000000dc;
-    padding-top: 2rem;
-    gap: 1rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .div__side-bar ul {
-    list-style: none;
-  }
-
-  .div__side-bar li {
-    padding: 1rem;
-  }
-
-  .div__side-bar a {
-    color: white;
-  }
-
   #text-information {
     display: none;
   }
