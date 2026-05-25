@@ -1,9 +1,3 @@
-// function dropDown() {
-//     click = document.getElementById("kr").addEventListener("click", displatDate);
-// }
-
-console.log("JS chargé");
-
 document.addEventListener("DOMContentLoaded", () => {
   const icon = document.querySelector(".hamburger");
   const nav = document.querySelector("#nav");

@@ -65,7 +65,45 @@ footer {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 810px) {
+
+    #nav {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #nav.show {
+    display: flex;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(14, 14, 14, 0.863);
+    backdrop-filter: blur(8px);
+  }
+
+  .hamburger {
+    width: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .hamburger.show {
+    z-index: 1;
+  }
+
+  .hamburger span {
+    height: 4px;
+    background: white;
+    border-radius: 4px;
+  }
 
   .navigation-side-bar {
     display: flex;

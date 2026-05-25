@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <title>Project - Osney</title>
+    <script src="main.js" defer></script>
     <link rel="stylesheet" href="/project/project.css" />
     <link rel="stylesheet" href="/global.css" />
     <meta name="google-site-verification" content="lr1Q96f1OCLbwcRAGw9LYzu-Xrttk0i9wjd0jjpq0Fs" />
-    <!-- <script src="./src/main.js" defer></script> -->
 </head>
 
 <body>
@@ -17,10 +17,17 @@
         <header>
             <div class="header__title-text header__title-text--active">
                 <h1 id="header-title">Osney</h1>
-                <p id="textFromTitle"><i>"Web Developer, Music Producer & Visual Creator - Passionate and Always Learning"</i></p>
+                <p id="textFromTitle"><i>"Web Developer, Music Producer & Visual Creator - Passionate and Always
+                        Learning"</i></p>
             </div>
 
-            <nav>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="nav-bar" id="nav">
                 <ul class="header__list header__list--active">
                     <li class="header__list-item header__list-item--active header__list-item--hover">
                         <a href="/index.html">about me</a>
